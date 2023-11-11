@@ -1,0 +1,35 @@
+
+# Projeto de Bases de Dados 23/24
+
+No âmbito da Unidade Curricular de 2º Ano Bases de Dados, iremos, com este projeto, descrever e implementar a base de dados de uma empresa fictícia de aluguer de carros.  
+
+Com esta base de dados, a empresa pretende armazenar não só dados relativos aos clientes, como também a sua frota de veículos e o ato de alugar o carro.  
+
+É importante frisar que esta base de dados não descreve uma aplicação que permite o aluguer de carros.
+## Modelo Conceitual
+
+Toda a documentação visual inerente ao Modelo Conceitual está na pasta Diagrama. 
+
+Uma descrição mais detalhada acerca da sua implementação pode ser consultada no ficheiro Relatório.pdf
+
+## Modelo Relacional
+
+No ficheiro Relacional.odt apresentamos o Modelo Relacional do nosso projeto.
+
+Ainda no nosso Relatório é possível consultar com mais detalhe toda a sua implementação e comparação com a IA.
+
+## Funcional Dependencies e BCNF
+
+Sobres estes tópicos, toda a informação pode ser conferida tanto no relatório como nos ficheiros FUNCIONAL_DEPENDENCIES.docx e violacoesBCNF.odt.
+
+## Inteligência Artificial
+Na realização deste projeto foi-nos pedida a utilização de uma IA a nosso gosto para termos de comparação com o nosso trabalho. 
+
+Inicialmente utilizamos o [ChatUML](https://chatuml.com/) para representar o diagrama do Modelo Conceitual, contudo, na transição para o Modelo Relacional optamos por recorrer ao [ChatGPT](https://chat.openai.com/).
+
+A documentação de utilização pode ser encontrada em parte (screenshots) na pasta Inteligência Artificial e na integra no nosso Relatório.
+## Autores
+
+- Gonçalo Sousa - [@goncalosousa4](https://github.com/goncalosousa4)
+- Leonardo Garcia - [@marcelmedeiros1](https://github.com/marcelmedeiros1)
+- Marcel Medeiros - [@leonardorsg](https://github.com/leonardorsg)
