@@ -22,14 +22,21 @@ INSERT INTO FUNCIONARIO(id, horas_semanais,salario_hora) VALUES (5,40,15.4);
 INSERT INTO FUNCIONARIO(id, horas_semanais,salario_hora) VALUES (6,40,10.4);
 INSERT INTO FUNCIONARIO(id, horas_semanais,salario_hora) VALUES (7,24,6.4);
 
--- Carro
 
-INSERT INTO CARRO(id, matricula,modelo) VALUES (1234,'AB12SA','Twingo 3D');
-INSERT INTO CARRO(id, matricula,modelo) VALUES (2364,'LS14NN','CLIO 5P');
-INSERT INTO CARRO(id, matricula,modelo) VALUES (3211,'LF54FF','Ranger');
-INSERT INTO CARRO(id, matricula,modelo) VALUES (1895,'AK42SA','Jumpy 6M3');
-INSERT INTO CARRO(id, matricula,modelo) VALUES (7642,'KF24GS','Serie 8 Cabrio Automatic');
-INSERT INTO CARRO(id, matricula,modelo) VALUES (8743,'GJ35FF','Model 3');
+--Local_Levantamento
+
+
+INSERT INTO LOCAL_LEVANTAMENTO(morada) VALUES ('Estação Campanhã, Porto');
+INSERT INTO LOCAL_LEVANTAMENTO(morada) VALUES ('Aeroporto, Porto');
+INSERT INTO LOCAL_LEVANTAMENTO(morada) VALUES ('Centro Maia, Porto');
+
+-- Marca
+
+INSERT INTO MARCA(nome) VALUES ('Renault');
+INSERT INTO MARCA(nome) VALUES ('Ford');
+INSERT INTO MARCA(nome) VALUES ('Citroen');
+INSERT INTO MARCA(nome) VALUES ('BMW');
+INSERT INTO MARCA(nome) VALUES ('Tesla');
 
 -- Modelo
 
@@ -40,13 +47,16 @@ INSERT INTO MODELO(nome, categoria,marca) VALUES ('Jumpy 6M3', 'Comercial', 'Cit
 INSERT INTO MODELO(nome, categoria,marca) VALUES ('Serie 8 Cabrio Automatic', 'Prestígio', 'BMW');
 INSERT INTO MODELO(nome, categoria,marca) VALUES ('Model 3', 'Prestígio', 'Tesla');
 
--- Marca
 
-INSERT INTO MARCA(nome) VALUES ('Renault');
-INSERT INTO MARCA(nome) VALUES ('Ford');
-INSERT INTO MARCA(nome) VALUES ('Citroen');
-INSERT INTO MARCA(nome) VALUES ('BMW');
-INSERT INTO MARCA(nome) VALUES ('Tesla');
+-- Carro
+
+INSERT INTO CARRO(id, matricula,modelo) VALUES (1234,'AB12SA','Twingo 3D');
+INSERT INTO CARRO(id, matricula,modelo) VALUES (2364,'LS14NN','CLIO 5P');
+INSERT INTO CARRO(id, matricula,modelo) VALUES (3211,'LF54FF','Ranger');
+INSERT INTO CARRO(id, matricula,modelo) VALUES (1895,'AK42SA','Jumpy 6M3');
+INSERT INTO CARRO(id, matricula,modelo) VALUES (7642,'KF24GS','Serie 8 Cabrio Automatic');
+INSERT INTO CARRO(id, matricula,modelo) VALUES (8743,'GJ35FF','Model 3');
+
 
 -- Seguradora
 
@@ -62,8 +72,8 @@ INSERT INTO SEGURO(id,tipo,descricao,preco) VALUES (1753, 'Premium', 'Proteção
 
 -- Seguradora_Seguro
 
-INSERT INTO SEGURADORA_SEGURO(seguradora, seguro) VALUES ('Ok Seguros', 1023);
-INSERT INTO SEGURADORA_SEGURO(seguradora, seguro) VALUES ('Ok Seguros', 1153);
+INSERT INTO SEGURADORA_SEGURO(seguradora, seguro) VALUES ('OK Seguros', 1023);
+INSERT INTO SEGURADORA_SEGURO(seguradora, seguro) VALUES ('OK Seguros', 1153);
 INSERT INTO SEGURADORA_SEGURO(seguradora, seguro) VALUES ('Tranquilidade Seguros', 1023);
 INSERT INTO SEGURADORA_SEGURO(seguradora, seguro) VALUES ('Tranquilidade Seguros', 1153);
 INSERT INTO SEGURADORA_SEGURO(seguradora, seguro) VALUES ('Tranquilidade Seguros', 1753);
@@ -71,23 +81,49 @@ INSERT INTO SEGURADORA_SEGURO(seguradora, seguro) VALUES ('Génesis', 1023);
 INSERT INTO SEGURADORA_SEGURO(seguradora, seguro) VALUES ('Génesis', 1153);
 INSERT INTO SEGURADORA_SEGURO(seguradora, seguro) VALUES ('Génesis', 1753);
 
+
+-- Plano de Aluguer
+
+INSERT INTO PLANO_ALUGUER(id, nome, descricao, preco_diaria) VALUES (11, 'Comum', 'Aluguer de carros comuns. Permite circulação dentro de Portugal e quilometragem ilimitada', 7.10);
+INSERT INTO PLANO_ALUGUER(id, nome, descricao, preco_diaria) VALUES (12, 'Comum Internacional', 'Aluguer de carros comuns. Permite circulação dentro da União Europeia e quilometragem ilimitada', 14.10);
+INSERT INTO PLANO_ALUGUER(id, nome, descricao, preco_diaria) VALUES (23, 'Comercial Básico', 'Aluguer de carros comerciais. Permite circulação dentro de Portugal e quilometragem ilimitada', 32.80);
+INSERT INTO PLANO_ALUGUER(id, nome, descricao, preco_diaria) VALUES (24, 'Comercial Internacional', 'Aluguer de carros comuns. Permite circulação dentro da União Europeia e 700km incluidos', 42.80);
+INSERT INTO PLANO_ALUGUER(id, nome, descricao, preco_diaria) VALUES (35, 'Prestígio', 'Aluguer de carros de prestígio. Permite circulação dentro de Portugal e quilometragem ilimitada. Idade miníma de condução : 25 anos', 69.30);
+INSERT INTO PLANO_ALUGUER(id, nome, descricao, preco_diaria) VALUES (36, 'Prestígio Internacional', 'Aluguer de carros comuns. Permite circulação dentro da União Europeia e 700km incluidos. . Idade miníma de condução : 25 anos', 89.80);
+
+
+--Plano de Aluguer_Modelo
+
+INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (11,'Twingo 3D');
+INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (12,'Twingo 3D');
+INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (11,'CLIO 5P');
+INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (12,'CLIO 5P');
+INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (23,'Ranger');
+INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (24,'Ranger');
+INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (23,'Jumpy 6M3');
+INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (24,'Jumpy 6M3');
+INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (35,'Serie 8 Cabrio Automatic');
+INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (36,'Serie 8 Cabrio Automatic');
+INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (35,'Model 3');
+INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (36,'Model 3');
+
+--Aluguer
+ 
+INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (1132, 0, 'Estação Campanhã, Porto', 11, '2023-14-11','2023-17-11','09:00','10:00');
+INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (1253, 1, 'Aeroporto, Porto', 12, '2023-09-12','2023-20-12','08:00','10:00');
+INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (2331, 2, 'Centro Maia, Porto', 23, '2024-01-02','2024-02-15','17:30','19:00');
+INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (2453, 3, 'Estação Campanhã, Porto', 24, '2022-10-05','2022-17-05','09:00','10:00');
+INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (3576, 4, 'Aeroporto, Porto', 35, '2023-14-11','2023-17-11','09:00','10:00');
+
+
 -- Aluguer_Seguro
 
 INSERT INTO ALUGUER_SEGURO(id_aluguer, id_seguro) VALUES (1132, 1023);
 INSERT INTO ALUGUER_SEGURO(id_aluguer, id_seguro) VALUES (1253, 1153);
-INSERT INTO ALUGUER_SEGURO(id_aluguer, id_seguro) VALUES (2332, 1753);
+INSERT INTO ALUGUER_SEGURO(id_aluguer, id_seguro) VALUES (2331, 1753);
 INSERT INTO ALUGUER_SEGURO(id_aluguer, id_seguro) VALUES (2453, 1023);
 INSERT INTO ALUGUER_SEGURO(id_aluguer, id_seguro) VALUES (3576, 1753);
-INSERT INTO ALUGUER_SEGURO(id_aluguer, id_seguro) VALUES (3697, 1023);
-
--- Plano de Aluguer
-
-INSERT INTO PLANO_ALUGUER(id, nome, descricao, preco) VALUES (11, 'Comum', 'Aluguer de carros comuns. Permite circulação dentro de Portugal e quilometragem ilimitada', 7.10);
-INSERT INTO PLANO_ALUGUER(id, nome, descricao, preco) VALUES (12, 'Comum Internacional', 'Aluguer de carros comuns. Permite circulação dentro da União Europeia e quilometragem ilimitada', 14.10);
-INSERT INTO PLANO_ALUGUER(id, nome, descricao, preco) VALUES (23, 'Comercial Básico', 'Aluguer de carros comerciais. Permite circulação dentro de Portugal e quilometragem ilimitada', 32.80);
-INSERT INTO PLANO_ALUGUER(id, nome, descricao, preco) VALUES (24, 'Comercial Internacional', 'Aluguer de carros comuns. Permite circulação dentro da União Europeia e 700km incluidos', 42.80);
-INSERT INTO PLANO_ALUGUER(id, nome, descricao, preco) VALUES (35, 'Prestígio', 'Aluguer de carros de prestígio. Permite circulação dentro de Portugal e quilometragem ilimitada. Idade miníma de condução : 25 anos', 69.30);
-INSERT INTO PLANO_ALUGUER(id, nome, descricao, preco) VALUES (36, 'Prestígio Internacional', 'Aluguer de carros comuns. Permite circulação dentro da União Europeia e 700km incluidos. . Idade miníma de condução : 25 anos', 89.80);
+INSERT INTO ALUGUER_SEGURO(id_aluguer, id_seguro) VALUES (3576, 1023);
 
 -- Extra
 
@@ -97,13 +133,6 @@ INSERT INTO EXTRA(id, nome, descricao, valor) VALUES (3, 'Condutor Adicional', '
 INSERT INTO EXTRA(id, nome, descricao, valor) VALUES (4, 'Televisão embutida', 'Mini-TV embutida nos assentos de passageiro.', 54.24);
 INSERT INTO EXTRA(id, nome, descricao, valor) VALUES (5, 'Serviço de Portagem Eletrônica', 'Conectores bluetooth, cabos de ligação para telemoveis.', 6.30);
 
---Aluguer
- 
-INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (1132, 0, 'Estação Campanhã, Porto', 11, '2023-14-11','2023-17-11','09:00','10:00');
-INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (1253, 1, 'Aeroporto, Porto', 12, '2023-09-12','2023-20-12','08:00','10:00');
-INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (2331, 2, 'Centro Maia, Porto', 23, '2024-01-02','2024-02-15','17:30','19:00');
-INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (2453, 3, 'Estação Campanhã, Porto', 24, '2022-10-05','2022-17-05','09:00','10:00');
-INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (3576, 4, 'Aeroporto, Porto', 35, '2023-14-11','2023-17-11','09:00','10:00');
 
 --Quantidade
 
@@ -135,16 +164,8 @@ INSERT INTO DEVOLUCAO(aluguer_id,funcionario_id,estado_veiculo) VALUES (2331,7,'
 INSERT INTO DEVOLUCAO(aluguer_id,funcionario_id,estado_veiculo) VALUES (3576,6,'Tintura falhada na traseira esquerda. Sem step');
 INSERT INTO DEVOLUCAO(aluguer_id,funcionario_id,estado_veiculo) VALUES (2453,5,'Placa arranhada');
 
---Local_Levantamento
-
-
-INSERT INTO LOCAL_LEVANTAMENTO(morada) VALUES ('Estação Campanhã, Porto');
-INSERT INTO LOCAL_LEVANTAMENTO(morada) VALUES ('Aeroporto, Porto');
-INSERT INTO LOCAL_LEVANTAMENTO(morada) VALUES ('Centro Maia, Porto');
 
 
 
 
 
-
-sql
