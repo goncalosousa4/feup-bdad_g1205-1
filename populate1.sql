@@ -26,9 +26,9 @@ INSERT INTO FUNCIONARIO(id, horas_semanais,salario_hora) VALUES (7,24,6.4);
 --Local_Levantamento
 
 
-INSERT INTO LOCAL_LEVANTAMENTO(morada) VALUES ('Estação Campanhã, Porto');
-INSERT INTO LOCAL_LEVANTAMENTO(morada) VALUES ('Aeroporto, Porto');
-INSERT INTO LOCAL_LEVANTAMENTO(morada) VALUES ('Centro Maia, Porto');
+INSERT INTO LOCAL_LEVANTAMENTO(id, morada) VALUES (0, 'Estação Campanhã, Porto');
+INSERT INTO LOCAL_LEVANTAMENTO(id, morada) VALUES (1, 'Aeroporto, Porto');
+INSERT INTO LOCAL_LEVANTAMENTO(id, morada) VALUES (2, 'Centro Maia, Porto');
 
 -- Marca
 
@@ -109,11 +109,11 @@ INSERT INTO PLANO_ALUGUER_MODELO(aid, nome) VALUES (36,'Model 3');
 
 --Aluguer
  
-INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (1132, 0, 'Estação Campanhã, Porto', 11, '2023-14-11','2023-17-11','09:00','10:00');
-INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (1253, 1, 'Aeroporto, Porto', 12, '2023-09-12','2023-20-12','08:00','10:00');
-INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (2331, 2, 'Centro Maia, Porto', 23, '2024-01-02','2024-02-15','17:30','19:00');
-INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (2453, 3, 'Estação Campanhã, Porto', 24, '2022-10-05','2022-17-05','09:00','10:00');
-INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (3576, 4, 'Aeroporto, Porto', 35, '2023-14-11','2023-17-11','09:00','10:00');
+INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (1132, 0, 0, 11, '2023-14-11','2023-17-11','09:00','10:00');
+INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (1253, 1, 1, 12, '2023-09-12','2023-20-12','08:00','10:00');
+INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (2331, 2, 2, 23, '2024-01-02','2024-02-15','17:30','19:00');
+INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (2453, 3, 0, 24, '2022-10-05','2022-17-05','09:00','10:00');
+INSERT INTO ALUGUER(id,cliente_id,morada,plano_id,data_inicio,data_fim,hora_inicio,hora_fim) VALUES (3576, 4, 1, 35, '2023-14-11','2023-17-11','09:00','10:00');
 
 
 -- Aluguer_Seguro
