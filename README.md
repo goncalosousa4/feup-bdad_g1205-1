@@ -25,11 +25,17 @@ Sobres estes tópicos, toda a informação pode ser conferida tanto no relatóri
 ## Instruções de Uso - SQL
 
 1º -> Instalar SQLite 
+
 2º -> Copie os arquivos create2.sql e populate2.sql para a pasta onde se encontra o SQLite (C:sqlite)
+
 3º -> Na pasta onde está o SQLite, crie um ficheiro aluguer.db:
+
 -- No comando prompt aceda ao diretório onde se encontra o SQLite, após isso digite sqlite3 aluguer.db
+
 4º -> Leia os arquivos create2.sql e populate2.sql:
+
 -- read. create2.sql
+
 -- read. populate2.sql
 
 Após estes passos a base de dados estará pronta para uso.
