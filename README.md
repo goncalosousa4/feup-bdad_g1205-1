@@ -50,5 +50,5 @@ A documentação de utilização pode ser encontrada em parte (screenshots) na p
 ## Autores
 
 - Gonçalo Sousa - [@goncalosousa4](https://github.com/goncalosousa4)
-- Leonardo Garcia - [@marcelmedeiros1](https://github.com/marcelmedeiros1)
-- Marcel Medeiros - [@leonardorsg](https://github.com/leonardorsg)
+- Marcel Medeiros - [@marcelmedeiros1](https://github.com/marcelmedeiros1)
+- Leonardo Garcia - [@leonardorsg](https://github.com/leonardorsg)
